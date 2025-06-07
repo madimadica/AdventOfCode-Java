@@ -6,5 +6,6 @@ public class AdventOfCode2024 {
     public static void main(String[] args) {
         AocRunner.run(Day1.class);
         AocRunner.run(Day2.class);
+        AocRunner.run(Day3.class);
     }
 }
