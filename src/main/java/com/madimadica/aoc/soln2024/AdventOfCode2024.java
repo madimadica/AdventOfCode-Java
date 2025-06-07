@@ -8,5 +8,6 @@ public class AdventOfCode2024 {
         AocRunner.run(Day2.class);
         AocRunner.run(Day3.class);
         AocRunner.run(Day4.class);
+        AocRunner.run(Day5.class);
     }
 }
