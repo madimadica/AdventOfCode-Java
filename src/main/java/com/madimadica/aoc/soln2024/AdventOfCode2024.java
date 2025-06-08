@@ -25,5 +25,6 @@ public class AdventOfCode2024 {
         AocRunner.run(Day21Index.class);
         AocRunner.run(Day22.class);
         AocRunner.run(Day23.class);
+        AocRunner.run(Day24.class);
     }
 }
