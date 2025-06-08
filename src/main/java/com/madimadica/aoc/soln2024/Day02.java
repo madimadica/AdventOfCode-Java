@@ -6,7 +6,7 @@ import org.togetherjava.aoc.core.puzzle.PuzzleSolution;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Day2 implements PuzzleSolution {
+public class Day02 implements PuzzleSolution {
 
     @Override
     public Object part1(PuzzleInput puzzleInput) {
