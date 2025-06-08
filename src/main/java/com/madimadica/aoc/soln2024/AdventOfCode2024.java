@@ -11,5 +11,6 @@ public class AdventOfCode2024 {
         AocRunner.run(Day5.class);
         AocRunner.run(Day6.class);
         AocRunner.run(Day7Bitmasks.class);
+        AocRunner.run(Day8.class);
     }
 }
