@@ -6,7 +6,7 @@ import org.togetherjava.aoc.core.puzzle.PuzzleSolution;
 
 import java.util.List;
 
-public class Day7Bitmasks implements PuzzleSolution {
+public class Day07Bitmasks implements PuzzleSolution {
 
     @Override
     public Object part1(PuzzleInput input) {

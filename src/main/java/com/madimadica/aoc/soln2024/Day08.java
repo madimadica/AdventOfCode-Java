@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class Day8 implements PuzzleSolution {
+public class Day08 implements PuzzleSolution {
 
     @Override
     public Object part1(PuzzleInput input) {

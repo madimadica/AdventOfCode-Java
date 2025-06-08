@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Day9 implements PuzzleSolution {
+public class Day09 implements PuzzleSolution {
 
 
     @Override

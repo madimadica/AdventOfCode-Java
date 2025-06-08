@@ -9,7 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.regex.Pattern;
 
-public class Day3 implements PuzzleSolution {
+public class Day03 implements PuzzleSolution {
 
     enum DataType { MUL, DO, DONT }
 

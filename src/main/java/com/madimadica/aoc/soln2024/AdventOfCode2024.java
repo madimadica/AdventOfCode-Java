@@ -4,15 +4,15 @@ import org.togetherjava.aoc.internal.AocRunner;
 
 public class AdventOfCode2024 {
     public static void main(String[] args) {
-        AocRunner.run(Day1.class);
+        AocRunner.run(Day01.class);
         AocRunner.run(Day02.class);
-        AocRunner.run(Day3.class);
-        AocRunner.run(Day4.class);
-        AocRunner.run(Day5.class);
-        AocRunner.run(Day6.class);
-        AocRunner.run(Day7Bitmasks.class);
-        AocRunner.run(Day8.class);
-        AocRunner.run(Day9.class);
+        AocRunner.run(Day03.class);
+        AocRunner.run(Day04.class);
+        AocRunner.run(Day05.class);
+        AocRunner.run(Day06.class);
+        AocRunner.run(Day07Bitmasks.class);
+        AocRunner.run(Day08.class);
+        AocRunner.run(Day09.class);
         AocRunner.run(Day10.class);
         AocRunner.run(Day11.class);
         AocRunner.run(Day12.class);

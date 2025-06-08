@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class Day5 implements PuzzleSolution {
+public class Day05 implements PuzzleSolution {
 
     record Rule(long before, long after) {}
     record Update(List<Long> nums) {}

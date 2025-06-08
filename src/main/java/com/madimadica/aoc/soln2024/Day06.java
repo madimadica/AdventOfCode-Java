@@ -7,31 +7,20 @@ import org.togetherjava.aoc.core.math.matrix.MatrixPosition;
 import org.togetherjava.aoc.core.puzzle.PuzzleInput;
 import org.togetherjava.aoc.core.puzzle.PuzzleSolution;
 
-import java.awt.*;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/**
- * @see Day6Animation
- */
-public class Day6Animated implements PuzzleSolution {
-    Day6Animation animation = new Day6Animation();
+public class Day06 implements PuzzleSolution {
 
     @Override
     public Object part1(PuzzleInput input) {
         var matrix = input.toCharMatrix();
-        matrix.findAll('#').forEach(
-                entry -> animation.placeWallAt(entry.position())
-        );
-
         MatrixPosition currentPosition = matrix.find('^').position();
-        animation.start();
 
         Direction facing = Direction.NORTH;
         BinaryMatrix visited = new BinaryMatrix(matrix);
         while (true) {
-            animation.moveTo(currentPosition);
             visited.set(currentPosition, true);
             MatrixPosition nextPosition = currentPosition.move(facing);
             if (matrix.outOfBounds(nextPosition)) {
@@ -55,20 +44,13 @@ public class Day6Animated implements PuzzleSolution {
         List<MatrixPosition> interrupts = getPath(input);
         for (MatrixPosition interrupt : interrupts) {
             var bruteMatrix = input.toCharMatrix();
-            animation.reset(false);
-            matrix.findAll('#').forEach(
-                    entry -> animation.placeWallAt(entry.position())
-            );
             bruteMatrix.set(interrupt, '#');
-            animation.setColor(interrupt, Color.WHITE.getRGB());
-            animation.repaint();
 
             Set<MatrixPosition> cornersVisited = new HashSet<>();
             MatrixPosition currentPosition = startingPosition;
             Direction facing = Direction.NORTH;
 
             while (true) {
-                animation.moveToFast(currentPosition);
                 MatrixPosition nextPosition = currentPosition.move(facing);
                 if (bruteMatrix.outOfBounds(nextPosition)) {
                     break;
@@ -84,10 +66,6 @@ public class Day6Animated implements PuzzleSolution {
                 }
                 currentPosition = nextPosition;
             }
-            animation.repaint();
-            try {
-                Thread.sleep(10);
-            } catch (InterruptedException e) {}
         }
         return combinations;
     }

@@ -9,7 +9,7 @@ import org.togetherjava.aoc.core.utils.StringUtils;
 
 import java.util.List;
 
-public class Day4 implements PuzzleSolution {
+public class Day04 implements PuzzleSolution {
 
     @Override
     public Object part1(PuzzleInput input) {

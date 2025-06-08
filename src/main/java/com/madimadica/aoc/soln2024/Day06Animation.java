@@ -11,10 +11,10 @@ import java.awt.image.BufferedImage;
  * !!! EPILEPSY WARNING !!!
  * As seen on my short <a href="https://www.youtube.com/shorts/yHmSLlnexLM">Youtube Video</a>
  */
-public class Day6Animation extends JPanel {
+public class Day06Animation extends JPanel {
 
     public static void main(String[] args) {
-        AocRunner.run(Day6Animated.class);
+        AocRunner.run(Day06Animated.class);
     }
 
     /**
@@ -31,7 +31,7 @@ public class Day6Animation extends JPanel {
         return canvas;
     }
 
-    public Day6Animation() {
+    public Day06Animation() {
         this.setSize(SIZE, SIZE);
         this.setPreferredSize(new Dimension(SIZE, SIZE));
     }
