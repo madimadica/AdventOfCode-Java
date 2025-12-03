@@ -4,6 +4,6 @@ import org.togetherjava.aoc.internal.AocRunner;
 
 public class AdventOfCode2025 {
     public static void main(String[] args) {
-        AocRunner.run(Day01.class);
+        AocRunner.run();
     }
 }
